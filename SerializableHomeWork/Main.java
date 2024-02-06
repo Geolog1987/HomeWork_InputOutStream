@@ -9,11 +9,17 @@ import java.util.zip.ZipOutputStream;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        GameProgress gameProgress = new GameProgress(100, 1, 50, 2);
-        saveGame("C://Users//Алексей Коданёв//Desktop//Games//savegames//save.txt", gameProgress);
+        GameProgress gameProgress = new GameProgress(100, 1, 45, 54);
+        GameProgress gameProgress2 = new GameProgress(73, 150, 50, 54);
+        GameProgress gameProgress3 = new GameProgress(89, 150, 52, 54);
+        saveGame("C://Users//Алексей Коданёв//Desktop//Games//savegames//save.dat", gameProgress);
+        saveGame("C://Users//Алексей Коданёв//Desktop//Games//savegames//save2.dat", gameProgress2);
+        saveGame("C://Users//Алексей Коданёв//Desktop//Games//savegames//save3.dat", gameProgress3);
 
         List<String> files = new ArrayList<String>();
-        files.add("C://Users//Алексей Коданёв//Desktop//Games//savegames//save.txt");
+        files.add("C://Users//Алексей Коданёв//Desktop//Games//savegames//save.dat");
+        files.add("C://Users//Алексей Коданёв//Desktop//Games//savegames//save2.dat");
+        files.add("C://Users//Алексей Коданёв//Desktop//Games//savegames//save3.dat");
 
         zipFiles("C://Users//Алексей Коданёв//Desktop//Games//savegames//zipSave.zip", files);
 

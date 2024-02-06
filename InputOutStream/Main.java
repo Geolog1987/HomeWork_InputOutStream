@@ -27,9 +27,9 @@ public class Main {
         for (int i = 0; i < address.length; i++) {
             File file = new File(address[i]);
             if (file.mkdir()) {
-                stringBuilder.append("Папка по адресу:" + " " + file + " " + "успешно создана;" + " ");
+                stringBuilder.append("Папка по адресу:" + " " + file + " " + "успешно создана\n");
             } else {
-                stringBuilder.append("Папка по адресу:" + " " + file + " " + "не создана;" + " ");
+                stringBuilder.append("Папка по адресу:" + " " + file + " " + "не создана\n");
             }
         }
 
@@ -37,9 +37,9 @@ public class Main {
             for (int i = 0; i < files.length; i++) {
                 File name = new File(files[i]);
                 if (name.createNewFile()) {
-                    stringBuilder.append("Файл по адресу:" + " " + name + " " + "успешно создан;" + " ");
+                    stringBuilder.append("Файл по адресу:" + " " + name + " " + "успешно создан\n");
                 } else {
-                    stringBuilder.append("Файл по адресу:" + " " + name + " " + "не создан;" + " ");
+                    stringBuilder.append("Файл по адресу:" + " " + name + " " + "не создан\n");
                 }
             }
         } catch (IOException ex) {
